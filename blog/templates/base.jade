@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        meta(http-equiv="content-type", content="text/html; charset=windows-1252")
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        //- will not output within markup
+        block title
+            title #{title} - My Django/Jade Application
+        link(rel="stylesheet", href="static/main.css")
+
+    body
+        block content
+    //hr
+    footer
+        p &copy; #{year} - My django/Jade Application
+        p &copy; #{year}, Faat Sattarov
+        br
+        p Все торговые марки, которые появляются  на данном сайте. являются собственностью их владельцев.
+
+    script(src='/static/scripts/jquery-1.10.2.js')
+    script(src='/static/scripts/bootstrap.js')
+    script(src='/static/scripts/respond.js')
+    script(src="scr/main.js")
+
+    block scripts
