@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+{% block body %}
+    {% for post in posts %}
+        {{ post.author }}
+        {{ post.date_posted|date:'F d, Y' }}
+        {{ post.title }}
+        {{ post.content }}
+    {% endfor %}
+{% endblock body %}
