@@ -1,6 +1,7 @@
 {% extends 'blog/base.html' %}
 {% block body %}
     {% for post in posts %}
+        <img src="{{ post.author.profile.image.url }}">
         {{ post.author }}
         {{ post.date_posted|date:'F d, Y' }}
         {{ post.title }}

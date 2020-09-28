@@ -1,6 +1,11 @@
 #my files
 pass*
 
+#my folders
+mixed/media/
+mixed/media
+media/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

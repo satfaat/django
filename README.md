@@ -21,3 +21,12 @@ python manage.py shell
 python manage.py makemigrations
 python manage.py migrate
 python manage.py sqlmigrate blog 0001
+
+## Testing
+python manage.py test
+
+python manage.py shell
+    from django.test import Client
+
+    client = Client()
+    client.get()
